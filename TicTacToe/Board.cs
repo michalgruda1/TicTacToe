@@ -124,17 +124,6 @@ namespace TicTacToe
             {
                 isWinner = true;
             }
-
-            /*
-            // now return
-            if (isWinner && playerNumber == 1)
-            {
-                ++winsPlayer1;
-            } else if (isWinner && playerNumber == 2)
-            {
-                ++winsPlayer2;
-            }
-            */
             return isWinner;
         }
 
