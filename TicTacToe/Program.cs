@@ -195,15 +195,8 @@ namespace TicTacToe
                             Console.Clear();
                             myBoard.RenderBoard();
                             Console.WriteLine("****************************************** \nPlayer {0}, using {1} has won!!!", playerNumber, mark);
-                            // count win for player
-                            if (playerNumber == 1)
-                            {
-                                scoreBoard.ConcludeGame(1);
-                            }
-                            else
-                            {
-                                scoreBoard.ConcludeGame(2);
-                            }
+                            // count win for current player
+                            scoreBoard.ConcludeGame(playerNumber);
 
                             // display score
                             scoreBoard.Draw();
